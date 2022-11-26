@@ -3,16 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4B28E4BF2931CAB2006F72C0 /* ChatTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4BE2931CAB2006F72C0 /* ChatTestApp.swift */; };
-		4B28E4C12931CAB2006F72C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4C02931CAB2006F72C0 /* ContentView.swift */; };
 		4B28E4C32931CAB4006F72C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B28E4C22931CAB4006F72C0 /* Assets.xcassets */; };
 		4B28E4C62931CAB4006F72C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B28E4C52931CAB4006F72C0 /* Preview Assets.xcassets */; };
 		4B28E4D22931CAB4006F72C0 /* ChatTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4D12931CAB4006F72C0 /* ChatTestTests.swift */; };
 		4B28E4DD2931CAB4006F72C0 /* ChatTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4DC2931CAB4006F72C0 /* ChatTestUITests.swift */; };
+		4B28E4FE2931CAD4006F72C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B28E4EE2931CAD4006F72C0 /* Assets.xcassets */; };
+		4B28E4FF2931CAD4006F72C0 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4F02931CAD4006F72C0 /* ChatModel.swift */; };
+		4B28E5002931CAD4006F72C0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4F12931CAD4006F72C0 /* ViewModel.swift */; };
+		4B28E5012931CAD4006F72C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B28E4F32931CAD4006F72C0 /* Preview Assets.xcassets */; };
+		4B28E5022931CAD4006F72C0 /* LibP2PChatExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4F42931CAD4006F72C0 /* LibP2PChatExampleApp.swift */; };
+		4B28E5032931CAD4006F72C0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4F62931CAD4006F72C0 /* SettingsView.swift */; };
+		4B28E5042931CAD4006F72C0 /* PeerIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4F72931CAD4006F72C0 /* PeerIconView.swift */; };
+		4B28E5052931CAD4006F72C0 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4F82931CAD4006F72C0 /* ChatView.swift */; };
+		4B28E5062931CAD4006F72C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4F92931CAD4006F72C0 /* ContentView.swift */; };
+		4B28E5072931CAD4006F72C0 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4FA2931CAD4006F72C0 /* ChatRow.swift */; };
+		4B28E5082931CAD4006F72C0 /* LocalNetworkAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4FC2931CAD4006F72C0 /* LocalNetworkAuthorization.swift */; };
+		4B28E5092931CAD4006F72C0 /* LibP2PService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4FD2931CAD4006F72C0 /* LibP2PService.swift */; };
+		4BFCC7DF2931E7DC003BCE33 /* Base32 in Frameworks */ = {isa = PBXBuildFile; productRef = 4BFCC7DE2931E7DC003BCE33 /* Base32 */; };
+		4BFCC7E12931E7DC003BCE33 /* Base2 in Frameworks */ = {isa = PBXBuildFile; productRef = 4BFCC7E02931E7DC003BCE33 /* Base2 */; };
+		4BFCC7E32931E7DC003BCE33 /* BaseX in Frameworks */ = {isa = PBXBuildFile; productRef = 4BFCC7E22931E7DC003BCE33 /* BaseX */; };
+		4BFCC7E52931E7DC003BCE33 /* Base64 in Frameworks */ = {isa = PBXBuildFile; productRef = 4BFCC7E42931E7DC003BCE33 /* Base64 */; };
+		4BFCC7E72931E7DC003BCE33 /* Base8 in Frameworks */ = {isa = PBXBuildFile; productRef = 4BFCC7E62931E7DC003BCE33 /* Base8 */; };
+		4BFCC7F32931E906003BCE33 /* _CryptoExtras in Frameworks */ = {isa = PBXBuildFile; productRef = 4BFCC7F22931E906003BCE33 /* _CryptoExtras */; };
+		4BFCC7F52931E906003BCE33 /* Crypto in Frameworks */ = {isa = PBXBuildFile; productRef = 4BFCC7F42931E906003BCE33 /* Crypto */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +53,6 @@
 /* Begin PBXFileReference section */
 		4B28E4BB2931CAB2006F72C0 /* ChatTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B28E4BE2931CAB2006F72C0 /* ChatTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTestApp.swift; sourceTree = "<group>"; };
-		4B28E4C02931CAB2006F72C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B28E4C22931CAB4006F72C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B28E4C52931CAB4006F72C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B28E4C72931CAB4006F72C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +63,18 @@
 		4B28E4D82931CAB4006F72C0 /* ChatTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B28E4DC2931CAB4006F72C0 /* ChatTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTestUITests.swift; sourceTree = "<group>"; };
 		4B28E4DE2931CAB4006F72C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B28E4EE2931CAD4006F72C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B28E4F02931CAD4006F72C0 /* ChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		4B28E4F12931CAD4006F72C0 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4B28E4F32931CAD4006F72C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B28E4F42931CAD4006F72C0 /* LibP2PChatExampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibP2PChatExampleApp.swift; sourceTree = "<group>"; };
+		4B28E4F62931CAD4006F72C0 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4B28E4F72931CAD4006F72C0 /* PeerIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerIconView.swift; sourceTree = "<group>"; };
+		4B28E4F82931CAD4006F72C0 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		4B28E4F92931CAD4006F72C0 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B28E4FA2931CAD4006F72C0 /* ChatRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		4B28E4FC2931CAD4006F72C0 /* LocalNetworkAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNetworkAuthorization.swift; sourceTree = "<group>"; };
+		4B28E4FD2931CAD4006F72C0 /* LibP2PService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibP2PService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +82,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BFCC7E72931E7DC003BCE33 /* Base8 in Frameworks */,
+				4BFCC7E32931E7DC003BCE33 /* BaseX in Frameworks */,
+				4BFCC7F32931E906003BCE33 /* _CryptoExtras in Frameworks */,
+				4BFCC7E12931E7DC003BCE33 /* Base2 in Frameworks */,
+				4BFCC7DF2931E7DC003BCE33 /* Base32 in Frameworks */,
+				4BFCC7F52931E906003BCE33 /* Crypto in Frameworks */,
+				4BFCC7E52931E7DC003BCE33 /* Base64 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +112,7 @@
 		4B28E4B22931CAB2006F72C0 = {
 			isa = PBXGroup;
 			children = (
+				4B28E4ED2931CAD4006F72C0 /* LibP2PChatExample */,
 				4B28E4BD2931CAB2006F72C0 /* ChatTest */,
 				4B28E4D02931CAB4006F72C0 /* ChatTestTests */,
 				4B28E4DB2931CAB4006F72C0 /* ChatTestUITests */,
@@ -97,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				4B28E4BE2931CAB2006F72C0 /* ChatTestApp.swift */,
-				4B28E4C02931CAB2006F72C0 /* ContentView.swift */,
 				4B28E4C22931CAB4006F72C0 /* Assets.xcassets */,
 				4B28E4C72931CAB4006F72C0 /* Info.plist */,
 				4B28E4C82931CAB4006F72C0 /* ChatTest.entitlements */,
@@ -132,6 +168,58 @@
 			path = ChatTestUITests;
 			sourceTree = "<group>";
 		};
+		4B28E4ED2931CAD4006F72C0 /* LibP2PChatExample */ = {
+			isa = PBXGroup;
+			children = (
+				4B28E4EE2931CAD4006F72C0 /* Assets.xcassets */,
+				4B28E4EF2931CAD4006F72C0 /* Models */,
+				4B28E4F22931CAD4006F72C0 /* Preview Content */,
+				4B28E4F42931CAD4006F72C0 /* LibP2PChatExampleApp.swift */,
+				4B28E4F52931CAD4006F72C0 /* Views */,
+				4B28E4FB2931CAD4006F72C0 /* Services */,
+			);
+			name = LibP2PChatExample;
+			path = ../LibP2PChatExample;
+			sourceTree = "<group>";
+		};
+		4B28E4EF2931CAD4006F72C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B28E4F02931CAD4006F72C0 /* ChatModel.swift */,
+				4B28E4F12931CAD4006F72C0 /* ViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4B28E4F22931CAD4006F72C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4B28E4F32931CAD4006F72C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B28E4F52931CAD4006F72C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B28E4F62931CAD4006F72C0 /* SettingsView.swift */,
+				4B28E4F72931CAD4006F72C0 /* PeerIconView.swift */,
+				4B28E4F82931CAD4006F72C0 /* ChatView.swift */,
+				4B28E4F92931CAD4006F72C0 /* ContentView.swift */,
+				4B28E4FA2931CAD4006F72C0 /* ChatRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B28E4FB2931CAD4006F72C0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4B28E4FC2931CAD4006F72C0 /* LocalNetworkAuthorization.swift */,
+				4B28E4FD2931CAD4006F72C0 /* LibP2PService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +236,15 @@
 			dependencies = (
 			);
 			name = ChatTest;
+			packageProductDependencies = (
+				4BFCC7DE2931E7DC003BCE33 /* Base32 */,
+				4BFCC7E02931E7DC003BCE33 /* Base2 */,
+				4BFCC7E22931E7DC003BCE33 /* BaseX */,
+				4BFCC7E42931E7DC003BCE33 /* Base64 */,
+				4BFCC7E62931E7DC003BCE33 /* Base8 */,
+				4BFCC7F22931E906003BCE33 /* _CryptoExtras */,
+				4BFCC7F42931E906003BCE33 /* Crypto */,
+			);
 			productName = ChatTest;
 			productReference = 4B28E4BB2931CAB2006F72C0 /* ChatTest.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +316,10 @@
 				Base,
 			);
 			mainGroup = 4B28E4B22931CAB2006F72C0;
+			packageReferences = (
+				4BFCC7DD2931E7DC003BCE33 /* XCRemoteSwiftPackageReference "swift-bases" */,
+				4BFCC7F12931E906003BCE33 /* XCRemoteSwiftPackageReference "swift-crypto" */,
+			);
 			productRefGroup = 4B28E4BC2931CAB2006F72C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,7 +336,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B28E5012931CAD4006F72C0 /* Preview Assets.xcassets in Resources */,
 				4B28E4C62931CAB4006F72C0 /* Preview Assets.xcassets in Resources */,
+				4B28E4FE2931CAD4006F72C0 /* Assets.xcassets in Resources */,
 				4B28E4C32931CAB4006F72C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,8 +364,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B28E4C12931CAB2006F72C0 /* ContentView.swift in Sources */,
+				4B28E5092931CAD4006F72C0 /* LibP2PService.swift in Sources */,
 				4B28E4BF2931CAB2006F72C0 /* ChatTestApp.swift in Sources */,
+				4B28E5042931CAD4006F72C0 /* PeerIconView.swift in Sources */,
+				4B28E5082931CAD4006F72C0 /* LocalNetworkAuthorization.swift in Sources */,
+				4B28E5002931CAD4006F72C0 /* ViewModel.swift in Sources */,
+				4B28E5052931CAD4006F72C0 /* ChatView.swift in Sources */,
+				4B28E5062931CAD4006F72C0 /* ContentView.swift in Sources */,
+				4B28E5032931CAD4006F72C0 /* SettingsView.swift in Sources */,
+				4B28E4FF2931CAD4006F72C0 /* ChatModel.swift in Sources */,
+				4B28E5072931CAD4006F72C0 /* ChatRow.swift in Sources */,
+				4B28E5022931CAD4006F72C0 /* LibP2PChatExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +697,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BFCC7DD2931E7DC003BCE33 /* XCRemoteSwiftPackageReference "swift-bases" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:timechain-academy/swift-bases.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		4BFCC7F12931E906003BCE33 /* XCRemoteSwiftPackageReference "swift-crypto" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:timechain-academy/swift-crypto.git";
+			requirement = {
+				kind = revision;
+				revision = 067254c79435de759aeef4a6a03e43d087d61312;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BFCC7DE2931E7DC003BCE33 /* Base32 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BFCC7DD2931E7DC003BCE33 /* XCRemoteSwiftPackageReference "swift-bases" */;
+			productName = Base32;
+		};
+		4BFCC7E02931E7DC003BCE33 /* Base2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BFCC7DD2931E7DC003BCE33 /* XCRemoteSwiftPackageReference "swift-bases" */;
+			productName = Base2;
+		};
+		4BFCC7E22931E7DC003BCE33 /* BaseX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BFCC7DD2931E7DC003BCE33 /* XCRemoteSwiftPackageReference "swift-bases" */;
+			productName = BaseX;
+		};
+		4BFCC7E42931E7DC003BCE33 /* Base64 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BFCC7DD2931E7DC003BCE33 /* XCRemoteSwiftPackageReference "swift-bases" */;
+			productName = Base64;
+		};
+		4BFCC7E62931E7DC003BCE33 /* Base8 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BFCC7DD2931E7DC003BCE33 /* XCRemoteSwiftPackageReference "swift-bases" */;
+			productName = Base8;
+		};
+		4BFCC7F22931E906003BCE33 /* _CryptoExtras */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BFCC7F12931E906003BCE33 /* XCRemoteSwiftPackageReference "swift-crypto" */;
+			productName = _CryptoExtras;
+		};
+		4BFCC7F42931E906003BCE33 /* Crypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BFCC7F12931E906003BCE33 /* XCRemoteSwiftPackageReference "swift-crypto" */;
+			productName = Crypto;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B28E4B32931CAB2006F72C0 /* Project object */;
 }
