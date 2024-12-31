@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		489964132D236BCA00F7F14E /* LibP2P in Frameworks */ = {isa = PBXBuildFile; productRef = 489964122D236BCA00F7F14E /* LibP2P */; };
+		489964162D236C1300F7F14E /* LibP2PNoise in Frameworks */ = {isa = PBXBuildFile; productRef = 489964152D236C1300F7F14E /* LibP2PNoise */; };
+		489964192D236C4C00F7F14E /* LibP2PMPLEX in Frameworks */ = {isa = PBXBuildFile; productRef = 489964182D236C4C00F7F14E /* LibP2PMPLEX */; };
+		4899641C2D236C9600F7F14E /* LibP2PMDNS in Frameworks */ = {isa = PBXBuildFile; productRef = 4899641B2D236C9600F7F14E /* LibP2PMDNS */; };
 		4B28E4BF2931CAB2006F72C0 /* ChatTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28E4BE2931CAB2006F72C0 /* ChatTestApp.swift */; };
 		4B28E4C32931CAB4006F72C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B28E4C22931CAB4006F72C0 /* Assets.xcassets */; };
 		4B28E4C62931CAB4006F72C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B28E4C52931CAB4006F72C0 /* Preview Assets.xcassets */; };
@@ -82,13 +86,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489964192D236C4C00F7F14E /* LibP2PMPLEX in Frameworks */,
+				489964162D236C1300F7F14E /* LibP2PNoise in Frameworks */,
 				4BFCC7E72931E7DC003BCE33 /* Base8 in Frameworks */,
 				4BFCC7E32931E7DC003BCE33 /* BaseX in Frameworks */,
+				4899641C2D236C9600F7F14E /* LibP2PMDNS in Frameworks */,
 				4BFCC7F32931E906003BCE33 /* _CryptoExtras in Frameworks */,
 				4BFCC7E12931E7DC003BCE33 /* Base2 in Frameworks */,
 				4BFCC7DF2931E7DC003BCE33 /* Base32 in Frameworks */,
 				4BFCC7F52931E906003BCE33 /* Crypto in Frameworks */,
 				4BFCC7E52931E7DC003BCE33 /* Base64 in Frameworks */,
+				489964132D236BCA00F7F14E /* LibP2P in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +252,10 @@
 				4BFCC7E62931E7DC003BCE33 /* Base8 */,
 				4BFCC7F22931E906003BCE33 /* _CryptoExtras */,
 				4BFCC7F42931E906003BCE33 /* Crypto */,
+				489964122D236BCA00F7F14E /* LibP2P */,
+				489964152D236C1300F7F14E /* LibP2PNoise */,
+				489964182D236C4C00F7F14E /* LibP2PMPLEX */,
+				4899641B2D236C9600F7F14E /* LibP2PMDNS */,
 			);
 			productName = ChatTest;
 			productReference = 4B28E4BB2931CAB2006F72C0 /* ChatTest.app */;
@@ -319,6 +331,10 @@
 			packageReferences = (
 				4BFCC7DD2931E7DC003BCE33 /* XCRemoteSwiftPackageReference "swift-bases" */,
 				4BFCC7F12931E906003BCE33 /* XCRemoteSwiftPackageReference "swift-crypto" */,
+				489964112D236BCA00F7F14E /* XCRemoteSwiftPackageReference "swift-libp2p" */,
+				489964142D236C1300F7F14E /* XCRemoteSwiftPackageReference "swift-libp2p-noise" */,
+				489964172D236C4C00F7F14E /* XCRemoteSwiftPackageReference "swift-libp2p-mplex" */,
+				4899641A2D236C9600F7F14E /* XCRemoteSwiftPackageReference "swift-libp2p-mdns" */,
 			);
 			productRefGroup = 4B28E4BC2931CAB2006F72C0 /* Products */;
 			projectDirPath = "";
@@ -461,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -516,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -538,11 +554,12 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ChatTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.bitcoincore.nostril.ChatTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -562,11 +579,12 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ChatTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.bitcoincore.nostril.ChatTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -699,6 +717,38 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		489964112D236BCA00F7F14E /* XCRemoteSwiftPackageReference "swift-libp2p" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-libp2p/swift-libp2p";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.13;
+			};
+		};
+		489964142D236C1300F7F14E /* XCRemoteSwiftPackageReference "swift-libp2p-noise" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-libp2p/swift-libp2p-noise";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+		489964172D236C4C00F7F14E /* XCRemoteSwiftPackageReference "swift-libp2p-mplex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-libp2p/swift-libp2p-mplex";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
+			};
+		};
+		4899641A2D236C9600F7F14E /* XCRemoteSwiftPackageReference "swift-libp2p-mdns" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-libp2p/swift-libp2p-mdns";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
 		4BFCC7DD2931E7DC003BCE33 /* XCRemoteSwiftPackageReference "swift-bases" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:timechain-academy/swift-bases.git";
@@ -718,6 +768,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		489964122D236BCA00F7F14E /* LibP2P */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 489964112D236BCA00F7F14E /* XCRemoteSwiftPackageReference "swift-libp2p" */;
+			productName = LibP2P;
+		};
+		489964152D236C1300F7F14E /* LibP2PNoise */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 489964142D236C1300F7F14E /* XCRemoteSwiftPackageReference "swift-libp2p-noise" */;
+			productName = LibP2PNoise;
+		};
+		489964182D236C4C00F7F14E /* LibP2PMPLEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 489964172D236C4C00F7F14E /* XCRemoteSwiftPackageReference "swift-libp2p-mplex" */;
+			productName = LibP2PMPLEX;
+		};
+		4899641B2D236C9600F7F14E /* LibP2PMDNS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4899641A2D236C9600F7F14E /* XCRemoteSwiftPackageReference "swift-libp2p-mdns" */;
+			productName = LibP2PMDNS;
+		};
 		4BFCC7DE2931E7DC003BCE33 /* Base32 */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4BFCC7DD2931E7DC003BCE33 /* XCRemoteSwiftPackageReference "swift-bases" */;
